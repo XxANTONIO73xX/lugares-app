@@ -28,7 +28,7 @@ export default class Navigator extends Component {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
                                 <Nav.Link href="/lugares">Lugares</Nav.Link>
-                                <NavDropdown title={"User: " + localStorage.getItem("user_name")} id="basic-nav-dropdown" className="custom-dropdown">
+                                <NavDropdown title="User: " id="basic-nav-dropdown" className="custom-dropdown">
                                     <Usuario logout={this.logout} />
                                     <NavDropdown.Item className="colorBlack" href="" onClick={this.logout}>
                                         Cerrar sesión
